@@ -6,19 +6,38 @@ By the end of this guide, you’ll have Claude Desktop running alongside Docker 
 
 > **Note:** All scripts and commands provided in this guide are based on my personal use case. Alternative options or variations will be noted in footnotes where applicable.
 
-## How to 
-1. First, install [Docker Desktop App](https://docs.docker.com/desktop/setup/install/mac-install).
+## Setup Instructions
+
+### 1. Install Docker Desktop
+
+First, install [Docker Desktop App](https://docs.docker.com/desktop/setup/install/mac-install).
+
+Alternatively, install through Homebrew: 
+
 ```
   brew install --cask docker
 ```
-2. Next, install a LLM Application. [^More]awdawd
+
+### 2. Install a Large Language Model (LLM) Application
+
+Next, install your choice Application links listed here. -> [^More]
+
 ```
   brew install --cask claude 
 ```
-3. Open docker and enable MCP if not enable it.
-4. Go to clients and connect the desired application to docker.
-5. Next go to catalog an choose MCP servers to run.
-> **Important:** If LLM application is open when adding new MCP server quit and reopen app.
+
+### 3. Enable MCP in Docker
+
+Open Docker and enable MCP. If it is not enabled by default, activate it in settings.
+
+### 4. Connect LLM Application to Docker
+
+Go to **Clients** under **MCP Toolkits** and connect the desired application to docker.
+
+### 5. Run MCP Servers from catalog
+
+Next within Docker go to catalog an choose MCP servers to run.
+> **Important:** If your LLM application is open when adding new MCP server quit and reopen app.
 
 
 [^More]: Applications to use.<br>
