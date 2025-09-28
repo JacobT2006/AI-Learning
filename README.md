@@ -34,6 +34,8 @@ Open Docker and enable MCP. If it is not enabled by default, activate it in sett
 
 Go to **Clients** under **MCP Toolkits** and connect the desired application to docker.
 
+![Docker Reference]()
+
 ### 5. Run MCP Servers from catalog
 
 Next within Docker go to catalog an choose MCP servers to run.
