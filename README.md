@@ -30,11 +30,13 @@ Next, install your choice Application links listed here. -> [^More]
 
 Open Docker and enable MCP. If it is not enabled by default, activate it in settings.
 
+![Docker Reference MCP](Assets/dockerReferenceMCP.png)
+
 ### 4. Connect LLM Application to Docker
 
 Go to **Clients** under **MCP Toolkits** and connect the desired application to docker.
 
-![Docker Reference]()
+![Docker Reference Clients](Assets/dockerReferenceClients.png)
 
 ### 5. Run MCP Servers from catalog
 
