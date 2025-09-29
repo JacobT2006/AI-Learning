@@ -43,6 +43,7 @@ Go to **Clients** under **MCP Toolkits** and connect the desired application to 
 Next within Docker go to catalog an choose MCP servers to run.
 > **Important:** If your LLM application is open when adding new MCP server quit and reopen app.
 
+![Docker Reference Servers](Assets/dockerReferenceServers.png)
 
 [^More]: Applications to use.<br>
         -[Claude Desktop](https://claude.ai/download)<br>
