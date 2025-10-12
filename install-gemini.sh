@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-echo "🚀 Starting installation of Docker and Google Gemini CLI..."
+echo "Starting installation of Docker and Google Gemini CLI..."
 
 # --- Check for Homebrew ---
 if ! command -v brew >/dev/null 2>&1; then
@@ -9,7 +9,7 @@ if ! command -v brew >/dev/null 2>&1; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   eval "$(/opt/homebrew/bin/brew shellenv)" || eval "$(/usr/local/bin/brew shellenv)"
 else
-  echo "✅ Homebrew already installed."
+  echo "✅ Homebrew installed."
 fi
 
 # --- Install Docker ---
@@ -22,7 +22,7 @@ if ! command -v docker >/dev/null 2>&1; then
     sleep 2
   done
 else
-  echo "✅ Docker already installed."
+  echo "✅ Docker installed."
 fi
 
 # --- Install Node.js ---
@@ -30,7 +30,7 @@ if ! command -v node >/dev/null 2>&1; then
   echo "📦 Installing Node.js..."
   brew install node
 else
-  echo "✅ Node.js already installed."
+  echo "✅ Node.js installed."
 fi
 
 # --- Install Google Gemini CLI ---
@@ -38,14 +38,14 @@ if ! command -v gemini >/dev/null 2>&1; then
   echo "✨ Installing Google Gemini CLI..."
   npm install -g @google/gemini-cli
 else
-  echo "✅ Gemini CLI already installed."
+  echo "✅ Gemini CLI installed."
 fi
 
-# --- Verify installation ---
-echo "🔍 Checking installations..."
+# --- Verify install ---
+echo "Checking installations..."
 docker --version
 node --version
 gemini --version
 
-echo "🎉 Installation complete!"
+echo "Installation complete!"
 echo "Run 'gemini auth login' to connect your Google account."
