@@ -4,7 +4,7 @@ MCP servers let AI models safely connect to stuff outside themselves—like your
 
 ***
 
-##Some cool things you can do with MCP servers:
+## Some cool things you can do with MCP servers:
 
 - Read and edit files on your computer
 
