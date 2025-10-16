@@ -1,4 +1,4 @@
-## MCP Servers on MacOS/Linux
+## MCP Servers on MacOS/Linux/Windows
 
 MCP servers let AI models safely connect to stuff outside themselves—like your files, notes, or code—without giving them full access to your whole computer. Think of them as little bridges that let the AI peek in and help out where you want.
 
