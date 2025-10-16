@@ -16,7 +16,15 @@ MCP servers let AI models safely connect to stuff outside themselves—like your
 
 ***
 
-If you want to get started fast with Gemini CLI, check out the easy install script here:
+If you want to get started fast with Gemini CLI, check out the easy install script here
+
+MacOS/Linux:
 ``` 
 bash <(curl -fsSL https://raw.githubusercontent.com/JacobT2006/AI-Learning/main/install-gemini.sh)
-``` 
+```
+Windows:
+```
+curl -fsSL -o install-windows.ps1 https://raw.githubusercontent.com/JacobT2006/AI-Learning/main/windows-install-file.ps1
+
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./windows-install-file.ps1
+```
