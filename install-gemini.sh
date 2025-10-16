@@ -117,6 +117,19 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then
     else
       echo "✅ Gemini CLI installed."
     fi
+# Detect if running on Windows (WSL or Git Bash)
+elif grep -qi microsoft /proc/version 2>/dev/null || [[ "$OSTYPE" == "msys" ]] || [[ "$OSTYPE" == "cygwin" ]]; then
+  echo "⚠️ Detected Windows environment (WSL or Git Bash). Running PowerShell installer..."
+
+  # Download Windows PowerShell installer script
+  curl -fsSL -o install-windows.ps1 https://raw.githubusercontent.com/yourrepo/yourproject/main/install-windows.ps1
+
+  # Run PowerShell script with bypass for execution policy
+  powershell.exe -NoProfile -ExecutionPolicy Bypass -File ./install-windows.ps1
+
+  exit 0
+fi
+
 else
   echo "Unknown OS for operation. Sorry."
   exit 0
