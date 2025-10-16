@@ -10,10 +10,10 @@ function Command-Exists {
 }
 
 # --- Ensure script runs as Administrator ---
-if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole(`
-    [Security.Principal.WindowsBuiltInRole] "Administrator")) {
-    Write-Host "Please run this script as Administrator." -ForegroundColor Red
-    exit 1
+if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) {
+    Write-Host "Not running as administrator. Relaunching with admin privileges..."
+    Start-Process powershell -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs
+    exit
 }
 
 # --- Check for winget ---
